@@ -4,6 +4,7 @@ class Utilisateur {
   String prenom;
   String email;
   String motDePasse;
+   String telphone;
   String role;
   String satut;
 
@@ -13,6 +14,7 @@ class Utilisateur {
     required this.prenom,
     required this.email,
     required this.motDePasse,
+     required this.telphone,
     required this.role,
      required this.satut,
     
@@ -25,6 +27,8 @@ class Utilisateur {
       'prenom': prenom,
       'email': email,
       'mot_de_passe': motDePasse,
+      'telphone':telphone,
+      
       'role': role,
       'satut': satut,
     };
@@ -37,6 +41,7 @@ class Utilisateur {
       prenom: map['prenom'],
       email: map['email'],
       motDePasse: map['mot_de_passe'],
+      telphone: map['telphone'],
       role: map['role'],
        satut: map['satut'],
     );
